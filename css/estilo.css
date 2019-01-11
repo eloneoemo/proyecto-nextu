@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+header , .imgscolumn , .footer, .bannerimg {
+max-width: 960px;
+margin: auto;
+}
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+}
+header > h1 {
+  font-family: 'Libre Barcode 128 Text', cursive;
+  color: white;
+}
+
+.imgscolumn > article{
+  float: left;
+  padding: 40px;
+  background-color: #d5c75f;
+  margin: auto;
+  text-align: center;
+}
+.bannerimg{
+  text-align: center;
+  margin: auto;
+  background-color: #82c3a6;
+  padding: 20px 0 20px 0;
+}
+.bannerimg picture img{
+  width: 90%;
+}
+.footer{
+  display: flex;
+  flex-direction:wrap;
+  flex-wrap: wrap;
+  background-color: #C6d5c5;
+}
+.contacto{
+  order: 1;
+  background-color: red;
+}
+.politicas{
+  order: 2;
+}
+.redes-sociales{
+  order: 3;
+}
+.copyright{
+  order: 4;
+}
+
+.menu{
+  text-align: right;
+  display: inline;
+}
+.menu ul li {
+  text-decoration: none;
+  display: inline;
+  margin: 10px;
+}
