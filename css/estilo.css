@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
+@import url('https://fonts.googleapis.com/css?family=Vibur');
 * {
   margin: 0;
   padding: 0;
 }
 body {
   background-color: black;
+}
+h1, p, a {
+  font-family: 'Vibur', cursive;
 }
 header , .imgscolumn , .footer, .bannerimg {
 max-width: 960px;
@@ -15,16 +18,32 @@ header{
   border-radius: 10px 10px 0 0;
 }
 header > h1 {
-  font-family: 'Libre Barcode 128 Text', cursive;
+  color: white;
+  margin: 10px;
+  text-align: left;
+}
+.menu{
+  text-align: right;
+  display: inline;
+}
+.menu ul li {
+  text-decoration: none;
+  display: inline;
+  margin: 10px;
+}
+.menu ul li a {
   color: white;
 }
-
+.imgscolumn {
+  display: flex;
+  flex-direction: wrap;
+}
 .imgscolumn > article{
-  float: left;
   padding: 40px;
   background-color: #d5c75f;
   margin: auto;
   text-align: center;
+  width: 430px;
 }
 .bannerimg{
   text-align: center;
@@ -43,24 +62,21 @@ header > h1 {
 }
 .contacto{
   order: 1;
-  background-color: red;
+  max-width: 20%;
+  padding-left: 5%;
 }
 .politicas{
   order: 2;
+  max-width: 20%;
+  padding-left: 5%;
 }
 .redes-sociales{
   order: 3;
+  max-width: 20%;
+  padding-left: 5%;
 }
 .copyright{
   order: 4;
-}
-
-.menu{
-  text-align: right;
-  display: inline;
-}
-.menu ul li {
-  text-decoration: none;
-  display: inline;
-  margin: 10px;
+  max-width: 20%;
+  padding-left: 5%;
 }
