@@ -1,18 +1,27 @@
- @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 * {
   margin: 0;
   padding: 0;
-}
-body {
-  background-color: black;
-}
-h1, p, a {
   font-family: 'Dancing Script', cursive;
 }
-header , .imgscolumn , .footer, .bannerimg {
-max-width: 960px;
-margin: auto;
+img {
+  box-shadow: 2px 2px #02010a;
+  -webkit-box-shadow: 2px 2px #02010a;
+  -moz-box-shadow: 2px 2px #02010a;
+  -o-box-shadow: 2px 2px #02010a;
 }
+body {
+  background-color: #02010a;
+}
+.contenido{
+  margin: auto;
+  max-width: 900px;
+  margin-top: 10px; 
+  margin-bottom: 10px;
+}
+
+/* HEADER */
+
 header{
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
@@ -20,9 +29,15 @@ header{
 header > h1 {
   color: white;
   margin: 10px;
+  line-height: 50px;
   text-align: left;
   display: inline;
+  text-shadow: 2px 2px #02010a;
+  -webkit-text-shadow: 2px 2px #02010a;
+  -moz-text-shadow: 2px 2px #02010a;
+  -o-text-shadow: 2px 2px #02010a;
 }
+
 /* MENU */
 .menu{
   text-align: right;
@@ -48,6 +63,9 @@ header > h1 {
 
 /* IMAGENES DE ARTICULOS */
 
+article {
+  margin: auto;
+}
 .imgscolumn {
   background-color: #d5c75f;
   text-align: center;
@@ -57,13 +75,13 @@ header > h1 {
 }
 .imagenes {
   display: inline;
-  width: 430px;
 }
 .imagenes > img{
   display: inline;
   margin: 0 20px 0 20px;
   border: 1px solid black;
 }
+
 
 /* FOOTER */
 
@@ -73,6 +91,8 @@ header > h1 {
   flex-direction:wrap;
   background-color: #C6d5c5;
   border-radius: 0 0 10px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px; 
 }
 .footer > div{
   min-width: 110px;
