@@ -9,8 +9,6 @@ p{
 img{
   box-shadow: 2px 2px #02010a;
   -webkit-box-shadow: 2px 2px #02010a;
-  -moz-box-shadow: 2px 2px #02010a;
-  -o-box-shadow: 2px 2px #02010a;
 }
 body{
   background-color: #02010a;
@@ -19,8 +17,9 @@ body{
 .contenido{
   margin: auto;
   max-width: 900px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  min-width: 290px;
+  margin-bottom: 1em;
+  animation: animacionContenedor 1s;
 }
 
 /* HEADER */
@@ -37,8 +36,6 @@ header > h1 {
   line-height: 1em;
   text-shadow: 2px 2px #02010a;
   -webkit-text-shadow: 2px 2px #02010a;
-  -moz-text-shadow: 2px 2px #02010a;
-  -o-text-shadow: 2px 2px #02010a;
 }
 
 /* MENU */
@@ -186,4 +183,16 @@ article {
 .sepia{
   filter: sepia(90%);
   -webkit-filter: sepia(90%);
+}
+/* ANIMACION */
+@-webkit-keyframes animacionContenedor{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 }
