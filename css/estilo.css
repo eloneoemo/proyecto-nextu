@@ -19,7 +19,7 @@ body{
 .contenido{
   margin: auto;
   max-width: 900px;
-  margin-top: 10px; 
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -72,7 +72,6 @@ header > h1 {
 
 article {
   margin: auto;
-  text-decoration: underline;
   font-weight: bold;
 }
 .imgscolumn {
@@ -85,39 +84,36 @@ article {
 .imagenes {
   display: inline;
 }
-.imagenes > img{
+.imagenes > a > img{
   display: inline;
   margin: 0 20px 0 20px;
+  border: 1px solid black;
+}
+.imagenes > img{
+  display: inline;
+  margin: 1em 1em 0 1em;
   border: 1px solid black;
 }
 #paisaje:hover{
   border: 2px solid #82c3a6;
   -webkit-transform: rotate(-10deg);
   -webkit-transition-duration: 1s;
-  -moz-transform: rotate(-10deg);
-  -moz-transition-duration: 1s;
-  -o-transform: rotate(-10deg);
-  -o-transition-duration: 1s;
 }
 #retrato:hover{
   border: 2px solid #82c3a6;
   -webkit-transform: translate(20px, -5px);
   -webkit-transition-duration: 1s;
-  -moz-transform: translate(20px, -5px);
-  -moz-transition-duration: 1s;
-  -o-transform: translate(20px, -5px);
-  -o-transition-duration: 1s;
 }
 
 /* FOOTER */
 
 .footer{
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   flex-direction:wrap;
   background-color: #C6d5c5;
   border-radius: 0 0 10px 10px;
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
 }
 .footer a{
   font-weight: bold;
@@ -177,4 +173,17 @@ article {
     margin: 0;
     margin-top: 1em;
   }
+}
+/* EFECTOS */
+.blur{
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+.gray{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+.sepia{
+  filter: sepia(90%);
+  -webkit-filter: sepia(90%);
 }
